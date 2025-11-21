@@ -1,0 +1,41 @@
+[gd_scene load_steps=6 format=4 uid="uid://glc5txdr2m64"]
+
+[ext_resource type="TileSet" uid="uid://ckx3bqgelidf5" path="res://resources/floor.tres" id="1_nngvk"]
+[ext_resource type="TileSet" uid="uid://c6eemqghcmgor" path="res://resources/grass.tres" id="2_cx1xh"]
+[ext_resource type="PackedScene" uid="uid://c6tatp608gxl3" path="res://scenes/env/background.tscn" id="3_34jvx"]
+[ext_resource type="PackedScene" uid="uid://bhqhy4efp3toa" path="res://scenes/env/mask.tscn" id="4_cx1xh"]
+[ext_resource type="PackedScene" uid="uid://djg8dkycal7pq" path="res://scenes/player/player.tscn" id="5_34jvx"]
+
+[node name="Level" type="Node2D"]
+
+[node name="LevelDesign" type="Node2D" parent="."]
+
+[node name="Floor" type="TileMap" parent="LevelDesign"]
+tile_set = ExtResource("1_nngvk")
+rendering_quadrant_size = 32
+format = 2
+
+[node name="Layer1" type="TileMapLayer" parent="LevelDesign/Floor"]
+use_parent_material = true
+tile_map_data = PackedByteArray("AAAAAAQACQAAAAAAAAAAAAUACQAAAAIAAAABAAUACQABAAIAAAACAAUACQABAAIAAAADAAUACQABAAIAAAAEAAUACQABAAIAAAAEAAQACQABAAAAAAADAAQACQABAAAAAAACAAQACQABAAAAAAABAAQACQABAAAAAAAFAAQACQABAAAAAAAFAAUACQABAAIAAAAGAAQACQABAAAAAAAHAAQACQACAAAAAAAHAAUACQACAAIAAAAGAAUACQABAAIAAAAKAAQACQAAAAAAAAAKAAUACQAAAAIAAAALAAUACQABAAIAAAAMAAUACQABAAIAAAAMAAQACQABAAAAAAANAAQACQABAAAAAAAOAAQACQABAAAAAAAPAAQACQABAAAAAAAQAAQACQABAAAAAAARAAQACQACAAAAAAARAAUACQACAAIAAAAQAAUACQABAAIAAAAPAAUACQABAAIAAAAOAAUACQABAAIAAAANAAUACQABAAIAAAALAAQACQABAAAAAAACAAMAAQAAAAAAAAAEAAMAAQAAAAAAAAAMAAMAAQAAAAAAAAAOAAMAAQAAAAAAAAAGAAMACAAAAAAAAAAQAAMACAAAAAAAAAAKAAMABgAAAAAAAAARAAMABgAAAAAAAAAHAAMABgAAAAAAAAAFAAMABgAAAAAAAAAIAAgACQABAAAAAAAIAAkACQABAAEAAAAIAAoACQABAAEAAAAIAAsACQABAAIAAAAJAAsACQABAAIAAAAKAAoACQABAAEAAAALAAoACQABAAEAAAALAAkACQABAAEAAAAKAAkACQABAAEAAAAJAAkACQABAAEAAAAJAAgACQABAAEAAAAJAAcACQAAAAAAAAAKAAgACQABAAEAAAALAAgACQABAAAAAAAJAAoACQABAAEAAAALAAsACQABAAIAAAAKAAsACQABAAIAAAAKAAcACQACAAAAAAAHAAgACQABAAAAAAAHAAkACQABAAEAAAAHAAoACQABAAEAAAAHAAsACQABAAIAAAAGAAgACQAAAAAAAAAGAAkACQAAAAEAAAAGAAoACQAAAAEAAAAGAAsACQAAAAIAAAAMAAgACQABAAAAAAANAAgACQACAAAAAAANAAkACQACAAEAAAANAAoACQACAAEAAAAMAAoACQABAAEAAAAMAAkACQABAAEAAAAMAAsACQABAAIAAAANAAsACQACAAIAAAAMAAcAAQAAAAAAAAAGAAcABgAAAAAAAAAKAAYABgAAAAAAAAA=")
+tile_set = ExtResource("1_nngvk")
+rendering_quadrant_size = 32
+use_kinematic_bodies = true
+
+[node name="Layer2" type="TileMapLayer" parent="LevelDesign/Floor"]
+use_parent_material = true
+tile_map_data = PackedByteArray("AAABAAMABQAAAAAAAAALAAMABQAAAAAAAAANAAcABQAAAAAAAAAKAAYABQAAAAAAAAAHAAcAAQAAAAAAAAA=")
+tile_set = ExtResource("1_nngvk")
+use_kinematic_bodies = true
+
+[node name="TileMap" type="TileMap" parent="LevelDesign"]
+tile_set = ExtResource("2_cx1xh")
+format = 2
+layer_0/tile_data = PackedInt32Array(983057, 1, 0, 983054, 1, 0, 983052, 1, 0, 983065, 1, 0, 983066, 1, 0, 983062, 1, 0, 983053, 1, 0, 851987, 1, 0, 458783, 1, 0, 458780, 1, 0, 458777, 1, 0, 458773, 1, 0, 458763, 1, 0, 458765, 1, 0, 458766, 1, 0, 458753, 1, 0, 458758, 1, 0, 458776, 1, 0)
+
+[node name="Background" parent="." instance=ExtResource("3_34jvx")]
+
+[node name="Mask" parent="." instance=ExtResource("4_cx1xh")]
+
+[node name="Player" parent="." instance=ExtResource("5_34jvx")]
+position = Vector2(34, 96)
