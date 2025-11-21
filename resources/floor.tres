@@ -1,0 +1,148 @@
+[gd_resource type="TileSet" load_steps=15 format=3 uid="uid://ckx3bqgelidf5"]
+
+[ext_resource type="Texture2D" uid="uid://cjxaax4vac0yh" path="res://assets/tile/decoration/fence_1.png" id="1_djmq0"]
+[ext_resource type="Texture2D" uid="uid://beobcilcj6mrt" path="res://assets/tile/decoration/fence_2.png" id="2_q6yoa"]
+[ext_resource type="Texture2D" uid="uid://bmc2ekyex5813" path="res://assets/tile/decoration/lamp.png" id="6_hwqd4"]
+[ext_resource type="Texture2D" uid="uid://d1a3k8lrk5bp3" path="res://assets/tile/decoration/rock_1.png" id="7_kmbe6"]
+[ext_resource type="Texture2D" uid="uid://4iiox5umxs4e" path="res://assets/tile/decoration/rock_2.png" id="8_fw01i"]
+[ext_resource type="Texture2D" uid="uid://dvnyjnitnlhnh" path="res://assets/tile/decoration/rock_3.png" id="9_vp3mt"]
+[ext_resource type="Texture2D" uid="uid://kquabucbmoc5" path="res://assets/tile/terrain/floor_autotile.png" id="10_o4mr4"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_a3vi8"]
+resource_name = "cerca_1"
+texture = ExtResource("1_djmq0")
+texture_region_size = Vector2i(32, 32)
+0:0/size_in_atlas = Vector2i(3, 1)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-36.690796, -3.1046143, 37.819763, -2.5401306, 38.669624, 15.9175, -35.56183, 16.087494)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_du83h"]
+resource_name = "cerca_2"
+texture = ExtResource("2_q6yoa")
+texture_region_size = Vector2i(32, 32)
+0:0/size_in_atlas = Vector2i(3, 1)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-36.690796, -3.1046143, 37.819763, -2.5401306, 38.669624, 15.9175, -35.56183, 16.087494)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_oln61"]
+resource_name = "poste"
+texture = ExtResource("6_hwqd4")
+texture_region_size = Vector2i(32, 32)
+0:0/size_in_atlas = Vector2i(1, 2)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(0, 16)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_n8o68"]
+resource_name = "pedra_1"
+texture = ExtResource("7_kmbe6")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2cshw"]
+resource_name = "pedra_2"
+texture = ExtResource("8_fw01i")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_82yow"]
+resource_name = "pedra_3"
+texture = ExtResource("9_vp3mt")
+texture_region_size = Vector2i(32, 32)
+0:0/size_in_atlas = Vector2i(2, 1)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-36.690796, -3.1046143, 37.819763, -2.5401306, 38.669624, 15.9175, -35.56183, 16.087494)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fvy8u"]
+resource_name = "terreno"
+texture = ExtResource("10_o4mr4")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/terrain_set = 0
+0:0/0/terrain = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+0:0/0/terrains_peering_bit/right_side = 0
+0:0/0/terrains_peering_bit/bottom_right_corner = 0
+0:0/0/terrains_peering_bit/bottom_side = 0
+1:0/0 = 0
+1:0/0/terrain_set = 0
+1:0/0/terrain = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+1:0/0/terrains_peering_bit/right_side = 0
+1:0/0/terrains_peering_bit/bottom_right_corner = 0
+1:0/0/terrains_peering_bit/bottom_side = 0
+1:0/0/terrains_peering_bit/bottom_left_corner = 0
+1:0/0/terrains_peering_bit/left_side = 0
+2:0/0 = 0
+2:0/0/terrain_set = 0
+2:0/0/terrain = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+2:0/0/terrains_peering_bit/bottom_side = 0
+2:0/0/terrains_peering_bit/bottom_left_corner = 0
+2:0/0/terrains_peering_bit/left_side = 0
+0:1/0 = 0
+0:1/0/terrain_set = 0
+0:1/0/terrain = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+0:1/0/terrains_peering_bit/right_side = 0
+0:1/0/terrains_peering_bit/bottom_right_corner = 0
+0:1/0/terrains_peering_bit/bottom_side = 0
+0:1/0/terrains_peering_bit/top_side = 0
+0:1/0/terrains_peering_bit/top_right_corner = 0
+1:1/0 = 0
+1:1/0/terrain_set = 0
+1:1/0/terrain = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+1:1/0/terrains_peering_bit/right_side = 0
+1:1/0/terrains_peering_bit/bottom_right_corner = 0
+1:1/0/terrains_peering_bit/bottom_side = 0
+1:1/0/terrains_peering_bit/bottom_left_corner = 0
+1:1/0/terrains_peering_bit/left_side = 0
+1:1/0/terrains_peering_bit/top_left_corner = 0
+1:1/0/terrains_peering_bit/top_side = 0
+1:1/0/terrains_peering_bit/top_right_corner = 0
+2:1/0 = 0
+2:1/0/terrain_set = 0
+2:1/0/terrain = 0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+2:1/0/terrains_peering_bit/bottom_side = 0
+2:1/0/terrains_peering_bit/bottom_left_corner = 0
+2:1/0/terrains_peering_bit/left_side = 0
+2:1/0/terrains_peering_bit/top_left_corner = 0
+2:1/0/terrains_peering_bit/top_side = 0
+0:2/0 = 0
+0:2/0/terrain_set = 0
+0:2/0/terrain = 0
+0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+0:2/0/terrains_peering_bit/right_side = 0
+0:2/0/terrains_peering_bit/top_side = 0
+0:2/0/terrains_peering_bit/top_right_corner = 0
+1:2/0 = 0
+1:2/0/terrain_set = 0
+1:2/0/terrain = 0
+1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+1:2/0/terrains_peering_bit/right_side = 0
+1:2/0/terrains_peering_bit/left_side = 0
+1:2/0/terrains_peering_bit/top_left_corner = 0
+1:2/0/terrains_peering_bit/top_side = 0
+1:2/0/terrains_peering_bit/top_right_corner = 0
+2:2/0 = 0
+2:2/0/terrain_set = 0
+2:2/0/terrain = 0
+2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+2:2/0/terrains_peering_bit/left_side = 0
+2:2/0/terrains_peering_bit/top_left_corner = 0
+2:2/0/terrains_peering_bit/top_side = 0
+
+[resource]
+tile_size = Vector2i(32, 32)
+physics_layer_0/collision_layer = 1
+terrain_set_0/mode = 0
+terrain_set_0/terrain_0/name = "auto_tile_terrain"
+terrain_set_0/terrain_0/color = Color(0.93073, 0.8408094, 0.78957516, 1)
+sources/0 = SubResource("TileSetAtlasSource_a3vi8")
+sources/1 = SubResource("TileSetAtlasSource_du83h")
+sources/5 = SubResource("TileSetAtlasSource_oln61")
+sources/6 = SubResource("TileSetAtlasSource_n8o68")
+sources/7 = SubResource("TileSetAtlasSource_2cshw")
+sources/8 = SubResource("TileSetAtlasSource_82yow")
+sources/9 = SubResource("TileSetAtlasSource_fvy8u")
