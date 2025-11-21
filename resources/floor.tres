@@ -14,7 +14,6 @@ texture = ExtResource("1_djmq0")
 texture_region_size = Vector2i(32, 32)
 0:0/size_in_atlas = Vector2i(3, 1)
 0:0/0 = 0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-36.690796, -3.1046143, 37.819763, -2.5401306, 38.669624, 15.9175, -35.56183, 16.087494)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_du83h"]
 resource_name = "cerca_2"
@@ -22,7 +21,6 @@ texture = ExtResource("2_q6yoa")
 texture_region_size = Vector2i(32, 32)
 0:0/size_in_atlas = Vector2i(3, 1)
 0:0/0 = 0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-36.690796, -3.1046143, 37.819763, -2.5401306, 38.669624, 15.9175, -35.56183, 16.087494)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_oln61"]
 resource_name = "poste"
@@ -50,7 +48,6 @@ texture = ExtResource("9_vp3mt")
 texture_region_size = Vector2i(32, 32)
 0:0/size_in_atlas = Vector2i(2, 1)
 0:0/0 = 0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-36.690796, -3.1046143, 37.819763, -2.5401306, 38.669624, 15.9175, -35.56183, 16.087494)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fvy8u"]
 resource_name = "terreno"
