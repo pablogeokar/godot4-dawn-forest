@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://c6tatp608gxl3"]
+[gd_scene load_steps=7 format=3 uid="uid://c6tatp608gxl3"]
 
 [ext_resource type="Script" uid="uid://blwt337dl7w2y" path="res://scripts/env/background.gd" id="1_sseh0"]
 [ext_resource type="Texture2D" uid="uid://cfxcknrgg3hge" path="res://assets/tile/parallax_background/layer_1.png" id="1_xx3ie"]
 [ext_resource type="Texture2D" uid="uid://cflnnt02afyxd" path="res://assets/tile/parallax_background/layer_2.png" id="2_sseh0"]
 [ext_resource type="Texture2D" uid="uid://b5jx4lysb6u2x" path="res://assets/tile/parallax_background/layer_3.png" id="3_q8j1l"]
 [ext_resource type="Texture2D" uid="uid://catwt3ew3p5ph" path="res://assets/tile/parallax_background/layer_4.png" id="4_wpiiv"]
+[ext_resource type="PackedScene" uid="uid://bhqhy4efp3toa" path="res://scenes/env/mask.tscn" id="6_q8j1l"]
 
 [node name="Background" type="ParallaxBackground"]
 script = ExtResource("1_sseh0")
@@ -45,3 +46,5 @@ motion_mirroring = Vector2(320, 0)
 offset_right = 40.0
 offset_bottom = 40.0
 texture = ExtResource("3_q8j1l")
+
+[node name="Mask" parent="." instance=ExtResource("6_q8j1l")]
