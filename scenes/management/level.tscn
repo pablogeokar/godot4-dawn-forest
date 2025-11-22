@@ -10,6 +10,11 @@
 
 [node name="LevelDesign" type="Node2D" parent="."]
 
+[node name="Background" parent="LevelDesign" instance=ExtResource("3_34jvx")]
+
+[node name="Mask2" parent="LevelDesign/Background" instance=ExtResource("4_cx1xh")]
+color = Color(0.091045685, 0.21371278, 0.18285543, 1)
+
 [node name="Floor" type="TileMap" parent="LevelDesign"]
 tile_set = ExtResource("1_nngvk")
 rendering_quadrant_size = 32
@@ -28,15 +33,10 @@ tile_map_data = PackedByteArray("AAABAAMABQAAAAAAAAALAAMABQAAAAAAAAA=")
 tile_set = ExtResource("1_nngvk")
 use_kinematic_bodies = true
 
-[node name="Mask" parent="LevelDesign/Floor" instance=ExtResource("4_cx1xh")]
-color = Color(0.16670516, 0.30909494, 0.3160981, 1)
-
 [node name="TileMap" type="TileMap" parent="LevelDesign"]
 tile_set = ExtResource("2_cx1xh")
 format = 2
 layer_0/tile_data = PackedInt32Array(458783, 1, 0, 458780, 1, 0, 458777, 1, 0, 458773, 1, 0, 458763, 1, 0, 458765, 1, 0, 458766, 1, 0, 458753, 1, 0, 458758, 1, 0, 458776, 1, 0)
-
-[node name="Background" parent="." instance=ExtResource("3_34jvx")]
 
 [node name="Player" parent="." instance=ExtResource("5_34jvx")]
 position = Vector2(57, 101)
